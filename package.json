@@ -8,6 +8,8 @@
     "type-check": "tsc"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "next": "latest",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
