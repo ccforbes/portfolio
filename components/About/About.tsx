@@ -2,6 +2,7 @@ import styles from '*.module.css'
 
 export const About = () => {
     return <>
+        <h4>About Me</h4>
         <p>
             I'm a software engineer based in Seattle, WA. I recently graduated 
             from the University of Washington from the Informatics program. I 
