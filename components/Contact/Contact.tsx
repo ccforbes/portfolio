@@ -1,3 +1,7 @@
+import styles from './*.module.css'
+
 export const Contact = () => {
-    return <></>
+    return <>
+        <p>Contact</p>
+    </>
 }

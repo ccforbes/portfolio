@@ -1,7 +1,7 @@
 import styles from './*.module.css'
 
-export const Projects = () => {
+export const Job = () => {
     return <>
-        <p>Projects</p>
+        <p>Job</p>
     </>
 }

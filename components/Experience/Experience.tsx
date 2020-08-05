@@ -1,3 +1,7 @@
+import styles from './*.module.css'
+
 export const Experience = () => {
-    return <></>
+    return <>
+        <p>Experience</p>
+    </>
 }
