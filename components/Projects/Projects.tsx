@@ -1,5 +1,6 @@
 import styles from './*.module.css'
 import { SingleProject } from './SingleProject/SingleProject'
+import { Row, Col } from 'react-materialize'
 
 export type Project = {
     id: number,
@@ -7,7 +8,8 @@ export type Project = {
     description: string,
     startDate: string,
     endDate?: string,
-    technologies: string[]
+    technologies: string[],
+    links?: string[]
 }
 
 const PROJECTS: Project[] = [
@@ -21,6 +23,9 @@ const PROJECTS: Project[] = [
             "C#",
             "React",
             "Xamarin",
+        ],
+        links: [
+            'localhost:3000'
         ]
     },
     {
@@ -40,6 +45,9 @@ const PROJECTS: Project[] = [
             "React",
             "Redis",
             "Redux"
+        ],
+        links: [
+            'localhost:3000'
         ]
     },
     {
@@ -52,6 +60,9 @@ const PROJECTS: Project[] = [
             "JSON",
             "Kotlin",
             "XML"
+        ],
+        links: [
+            'localhost:3000'
         ]
     }
 ]
@@ -59,8 +70,14 @@ const PROJECTS: Project[] = [
 export const Projects = () => {
     return <>
         <h4>My Projects</h4>
-        {PROJECTS.map(project => {
-            return <SingleProject key={project.id} project={project} />
-        })}
+        <p>Click on a project image to learn more!</p>
+        <Row>
+            <Col m={6} s={12}>
+                {PROJECTS.map(project => {
+                    return <SingleProject key={project.id} project={project} />
+                })}
+            </Col>
+        </Row>
+        
     </>
 }

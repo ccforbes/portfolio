@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './*.module.css'
 import { SingleJob } from './Job/SingleJob'
+import { Collapsible } from 'react-materialize'
 
 export type Job = {
     id: number
@@ -41,8 +42,10 @@ const JOBS: Job[] = [
 export const Experience: React.FC = () => {
     return <>
         <h4>My Experiences</h4>
-        {JOBS.map(job => {
-            return <SingleJob job={job} key={job.id} />
-        })}
+        <Collapsible accordion={false} popout>
+            {JOBS.map(job => {
+                return <SingleJob job={job} key={job.id}/>
+            })}
+        </Collapsible>
     </>
 }
