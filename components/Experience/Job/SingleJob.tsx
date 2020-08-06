@@ -9,11 +9,11 @@ type SingleJobProps = {
 
 export const SingleJob: React.FC<SingleJobProps> = ({ job }) => {
     return <CollapsibleItem
-            header={job.title}
+            header={<>
+                <strong>{job.title}</strong>; {job.employer} (<em>{job.startDate} - {job.endDate ? job.endDate : 'Present'}</em>)
+            </>}
             onSelect={()=>{}}>
-            <p>{job.employer}</p>
             <p>{job.description}</p>
-            <p>{job.startDate} - {job.endDate ? job.endDate : 'Present'}</p>
     </CollapsibleItem>
     
 }

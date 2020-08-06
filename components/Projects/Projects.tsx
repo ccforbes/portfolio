@@ -72,11 +72,11 @@ export const Projects = () => {
         <h4>My Projects</h4>
         <p>Click on a project image to learn more!</p>
         <Row>
-            <Col m={6} s={12}>
-                {PROJECTS.map(project => {
-                    return <SingleProject key={project.id} project={project} />
-                })}
-            </Col>
+            {PROJECTS.map(project => {
+                return <Col m={4} s={12} key={project.id}>
+                    <SingleProject project={project} />
+                </Col>
+            })}
         </Row>
         
     </>

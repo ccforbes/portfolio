@@ -19,7 +19,9 @@ export const SingleProject: React.FC<SingleProjectProp> = ({ project }) => {
                     {project.name}
                 </CardTitle>
             }
-            reveal={<p>{project.description}</p>}>
+            reveal={<p>{project.description}</p>}
+            revealIcon={<Icon>more_vert</Icon>}
+        >
                 <p>{project.startDate} - {project.endDate ? project.endDate : "Present"}</p>
                 <p>Technologies: {project.technologies.join(", ")}</p>
         </Card>
