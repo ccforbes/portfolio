@@ -11,18 +11,19 @@ type SingleProjectProp = {
 export const SingleProject: React.FC<SingleProjectProp> = ({ project }) => {
     return <>
         <Card
+            className='hoverable sticky-action medium'
             actions={project.links ? project.links.map(link => {
                 return <a key={link} href={link}>link</a>
             }) : undefined}
+            closeIcon={<Icon>close</Icon>}
             header={
-                <CardTitle image='/placeholder.jpg' reveal waves='light'>
-                    {project.name}
-                </CardTitle>
+                <CardTitle image='/placeholder.jpg' reveal waves='light' />
             }
             reveal={<p>{project.description}</p>}
             revealIcon={<Icon>more_vert</Icon>}
+            title={project.name}
         >
-                <p>{project.startDate} - {project.endDate ? project.endDate : "Present"}</p>
+                <em>{project.startDate} - {project.endDate ? project.endDate : "Present"}</em>
                 <p>Technologies: {project.technologies.join(", ")}</p>
         </Card>
     </>

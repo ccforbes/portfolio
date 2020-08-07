@@ -40,12 +40,12 @@ const JOBS: Job[] = [
 ]
 
 export const Experience: React.FC = () => {
-    return <>
-        <h4>My Experiences</h4>
+    return <div className='container section'>
+        <h4 className='center-align'>Experience</h4>
         <Collapsible accordion={false} popout>
             {JOBS.map(job => {
                 return <SingleJob job={job} key={job.id}/>
             })}
         </Collapsible>
-    </>
+    </div>
 }

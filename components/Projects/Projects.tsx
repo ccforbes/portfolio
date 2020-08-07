@@ -30,7 +30,7 @@ const PROJECTS: Project[] = [
     },
     {
         id: 2,
-        name: "Chat App (Slack Clone)",
+        name: "Chat App",
         description: "",
         startDate: "January 2020",
         endDate: "March 2020",
@@ -68,9 +68,9 @@ const PROJECTS: Project[] = [
 ]
 
 export const Projects = () => {
-    return <>
-        <h4>My Projects</h4>
-        <p>Click on a project image to learn more!</p>
+    return <div className='container section'>
+        <h4 className='center-align'>Projects</h4>
+        <p className='center-align'>Click on a project image to learn more!</p>
         <Row>
             {PROJECTS.map(project => {
                 return <Col m={4} s={12} key={project.id}>
@@ -79,5 +79,5 @@ export const Projects = () => {
             })}
         </Row>
         
-    </>
+    </div>
 }

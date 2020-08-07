@@ -9,6 +9,7 @@ type SingleJobProps = {
 
 export const SingleJob: React.FC<SingleJobProps> = ({ job }) => {
     return <CollapsibleItem
+            className='z-depth-1'
             header={<>
                 <strong>{job.title}</strong>; {job.employer} (<em>{job.startDate} - {job.endDate ? job.endDate : 'Present'}</em>)
             </>}
