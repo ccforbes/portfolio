@@ -14,7 +14,7 @@ export type Project = {
 
 const PROJECTS: Project[] = [
     {
-        id: 3,
+        id: 4,
         name: "MyFoodDiary",
         description: "",
         startDate: "June 2020",
@@ -23,6 +23,24 @@ const PROJECTS: Project[] = [
             "C#",
             "React",
             "Xamarin",
+        ],
+        links: [
+            'localhost:3000'
+        ]
+    },
+    {
+        id: 3,
+        name: "HireAssist.ML",
+        description: "",
+        startDate: "January 2020",
+        endDate: "May 2020",
+        technologies: [
+            "Docker",
+            "Firebase",
+            "Express",
+            "GCP Cloud Run",
+            "Node.js",
+            "React",
         ],
         links: [
             'localhost:3000'
@@ -73,7 +91,7 @@ export const Projects = () => {
         <p className='center-align'>Click on a project image to learn more!</p>
         <Row>
             {PROJECTS.map(project => {
-                return <Col m={4} s={12} key={project.id}>
+                return <Col l={3} m={6} s={12} key={project.id}>
                     <SingleProject project={project} />
                 </Col>
             })}
