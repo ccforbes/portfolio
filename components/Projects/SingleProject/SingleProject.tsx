@@ -1,30 +1,33 @@
 import React from 'react'
 
-import styles from './*.module.css'
+import styles from './SingleProject.module.css'
 import { Project } from '../Projects'
-import { Card, CardTitle, Icon } from 'react-materialize'
+import { CustomCard, CustomCardContent, CustomCardActions, CustomCardReveal, CustomCardThumbnail } from '../../CustomCard/CustomMaterialCard'
+import { Link } from '../../types'
 
 type SingleProjectProp = {
     project: Project
 }
 
+
 export const SingleProject: React.FC<SingleProjectProp> = ({ project }) => {
+    const links: Link[] = project.links.map(link => {
+        return new Link("Link", link)
+    })
     return <>
-        <Card
-            className='hoverable sticky-action medium'
-            actions={project.links ? project.links.map(link => {
-                return <a key={link} href={link}>link</a>
-            }) : undefined}
-            closeIcon={<Icon>close</Icon>}
-            header={
-                <CardTitle image='/placeholder.jpg' reveal waves='light' />
-            }
-            reveal={<p>{project.description}</p>}
-            revealIcon={<Icon>more_vert</Icon>}
-            title={project.name}
-        >
-                <em>{project.startDate} - {project.endDate ? project.endDate : "Present"}</em>
-                <p>Technologies: {project.technologies.join(", ")}</p>
-        </Card>
+        <CustomCard >
+            <CustomCardThumbnail reveal imgSrc='/placeholder.jpg'/>
+            <CustomCardContent 
+                reveal 
+                title={project.name}
+                startDate={project.startDate} 
+                endDate={project.endDate}
+                shortDesc={'Technologies: ' + project.technologies.join(", ")}/>
+            <CustomCardActions 
+                links={links}/>
+            <CustomCardReveal 
+                title={project.name}
+                description={project.description}/>
+        </CustomCard>
     </>
 }

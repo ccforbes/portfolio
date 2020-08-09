@@ -8,7 +8,7 @@ export const About = () => {
             <p>
                 I'm a software engineer based in Seattle, WA. I recently graduated 
                 from the University of Washington from the Informatics program. I 
-                am passionate about using my full stack web development skills in 
+                am passionate about using my full stack software development skills in 
                 creating intutive applications to solve various information problems 
                 that'll benefit people and society.
             </p>

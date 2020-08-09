@@ -1,9 +1,5 @@
-import React from 'react'
-import "../styles.css"
-import type { AppProps } from 'next/app'
+import App from 'next/app'
 
-function MyApp({ Component, pageProps }: AppProps) {
-    return <Component {...pageProps} />
-}
+import "../styles/styles.css"
 
-export default MyApp
+export default App

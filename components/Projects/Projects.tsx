@@ -9,14 +9,14 @@ export type Project = {
     startDate: string,
     endDate?: string,
     technologies: string[],
-    links?: string[]
+    links: string[]
 }
 
 const PROJECTS: Project[] = [
     {
         id: 4,
         name: "MyFoodDiary",
-        description: "",
+        description: "Test description.",
         startDate: "June 2020",
         technologies: [
             "Azure",
@@ -31,7 +31,7 @@ const PROJECTS: Project[] = [
     {
         id: 3,
         name: "HireAssist.ML",
-        description: "",
+        description: "Test description.",
         startDate: "January 2020",
         endDate: "May 2020",
         technologies: [
@@ -49,7 +49,7 @@ const PROJECTS: Project[] = [
     {
         id: 2,
         name: "Chat App",
-        description: "",
+        description: "Test description.",
         startDate: "January 2020",
         endDate: "March 2020",
         technologies: [
@@ -71,7 +71,7 @@ const PROJECTS: Project[] = [
     {
         id: 1,
         name: "MTNEAR",
-        description: "",
+        description: "Test description.",
         startDate: "November 2019",
         endDate: "December 2019",
         technologies: [
@@ -91,7 +91,7 @@ export const Projects = () => {
         <p className='center-align'>Click on a project image to learn more!</p>
         <Row>
             {PROJECTS.map(project => {
-                return <Col l={3} m={6} s={12} key={project.id}>
+                return <Col xl={6} l={12} key={project.id}>
                     <SingleProject project={project} />
                 </Col>
             })}

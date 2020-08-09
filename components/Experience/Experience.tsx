@@ -1,10 +1,11 @@
 import React from 'react'
 import styles from './*.module.css'
 import { SingleJob } from './Job/SingleJob'
-import { Collapsible } from 'react-materialize'
+import { Row, Col } from 'react-materialize'
 
 export type Job = {
     id: number
+    image?: string,
     title: string,
     employer: string,
     description: string,
@@ -15,25 +16,28 @@ export type Job = {
 const JOBS: Job[] = [
     {
         id: 3,
+        image: "/ischool.png",
         title: "Teaching Assistant: Server-Side Development",
         employer: "University of Washington Information School",
-        description: "",
+        description: "Test description.",
         startDate: "March 2020",
         endDate: "June 2020",
     },
     {
         id: 2,
+        image: "/ischool.png",
         title: "Software Engineer Co-op",
         employer: "AdaptiLab",
-        description: "",
+        description: "Test description.",
         startDate: "January 2020",
         endDate: "May 2020",
     },
     {
         id: 1,
+        image: "/ischool.png",
         title: "Student Assistant: Software Developer",
         employer: "University of Washington Transporation Services",
-        description: "",
+        description: "Test description.",
         startDate: "October 2018",
         endDate: "March 2020",
     }
@@ -42,10 +46,13 @@ const JOBS: Job[] = [
 export const Experience: React.FC = () => {
     return <div className='container section'>
         <h4 className='center-align'>Experience</h4>
-        <Collapsible accordion={false} popout>
+        <Row>
             {JOBS.map(job => {
-                return <SingleJob job={job} key={job.id}/>
+                return <Col s={12}>
+                    <SingleJob job={job} key={job.id}/>
+                </Col>
             })}
-        </Collapsible>
+        </Row>
+        
     </div>
 }

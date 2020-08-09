@@ -1,0 +1,10 @@
+.job {
+    margin-bottom: 10px;
+    background-color: #292929;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
