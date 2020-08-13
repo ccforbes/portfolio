@@ -1,18 +1,23 @@
 type CustomCardRevealProps = {
     title: string,
-    description: string
+    description: string[]
 }
 
-const darkMode: React.CSSProperties = {
-    backgroundColor: '#292929'
+const reveal: React.CSSProperties = {
+    backgroundColor: '#292929',
+    overflowY: 'auto'
 }
 
 export const CustomCardReveal: React.FC<CustomCardRevealProps> = ({ title, description }) => {
-    return <div className='card-reveal' style={darkMode}>
+    return <div className='card-reveal' style={reveal}>
         <span className='card-title'>
-            {title}
+            <strong>{title}</strong>
             <i className='material-icons right'>close</i>
         </span>
-        <p>{description}</p>
+        <div className='section'>
+            {description.map(paragraph => {
+                return <p>{paragraph}</p>
+            })}
+        </div>
     </div>
 }

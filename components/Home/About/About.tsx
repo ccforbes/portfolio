@@ -4,7 +4,7 @@ import { Row, Col } from 'react-materialize'
 export const About = () => {
     return <div className={styles.about}>
         <div className='container section'>
-            <h4 className='center-align'>About Me</h4>
+            <h4 className='center-align'><strong>About Me</strong></h4>
             <p>
                 I'm a software engineer based in Seattle, WA. I recently graduated 
                 from the University of Washington from the Informatics program. I 

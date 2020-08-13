@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import { Navigation } from './Navigation/Navigation'
+import { Footer } from './Footer/Footer'
 
 type LayoutProps = {
     title: string,
@@ -8,7 +9,7 @@ type LayoutProps = {
 }
 
 export const Layout: React.FC<LayoutProps> = ({ title, children }) => {
-    return <>
+    return <div className="body">
         <Head>
             <title>{title + ' | Christofer Forbes'}</title>
             <link rel="shortcut icon" href='/favicon-logo.svg' />
@@ -17,7 +18,9 @@ export const Layout: React.FC<LayoutProps> = ({ title, children }) => {
             <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         </Head>
         <Navigation />
-        {children}
-        
-    </>
+        <main>
+            {children}
+        </main>
+        <Footer />
+    </div>
 }
