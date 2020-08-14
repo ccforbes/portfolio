@@ -16,12 +16,15 @@
     opacity: 0.9;
 }
 
-.item {
-    color: var(--theme-color);
-    margin: 5px;
+.links {
+    text-align: right;
+    display: flex;
+    justify-content: center;
 }
 
-.flex {
+.link {
+    color: #cccccc;
     display: flex;
     align-items: center;
+    padding: 5px;
 }

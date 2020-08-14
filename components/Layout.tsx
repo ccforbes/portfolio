@@ -4,14 +4,13 @@ import { Navigation } from './Navigation/Navigation'
 import { Footer } from './Footer/Footer'
 
 type LayoutProps = {
-    title: string,
-    children: React.ReactNode;
+    children: React.ReactNode
 }
 
-export const Layout: React.FC<LayoutProps> = ({ title, children }) => {
+export const Layout: React.FC<LayoutProps> = ({ children }) => {
     return <div className="body">
         <Head>
-            <title>{title + ' | Christofer Forbes'}</title>
+            <title>Christofer Forbes</title>
             <link rel="shortcut icon" href='/favicon-logo.svg' />
             <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></link>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />

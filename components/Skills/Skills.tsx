@@ -42,13 +42,15 @@ export const Skills = () => {
         <h4 className='center-align'><strong>Skills</strong></h4>
             <div className='section'>
                 <Row className='center-align'>
-                    {skills.map(skillset => {
-                        return <Col m={4} s={12}>
-                            <div className={styles.title}>
-                                <Icon medium className={styles.icon}>{skillset.icon}</Icon>
-                                <h5>{skillset.title}</h5>
+                    {skills.map((skillset: Skills, index: number) => {
+                        return <Col m={4} s={12} key={index}>
+                            <div className="section">
+                                <div className={styles.title}>
+                                    <Icon medium className={styles.icon}>{skillset.icon}</Icon>
+                                    <h5>{skillset.title}</h5>
+                                </div>
+                                <p>{skillset.list.join(", ")}</p>
                             </div>
-                            <p>{skillset.list.join(", ")}</p>
                         </Col>
                     })}
                 </Row>

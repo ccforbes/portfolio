@@ -37,6 +37,14 @@ p {
     font-size: larger;
 }
 
+#SideNav-10 li a {
+    color: white;
+}
+
+textarea {
+    height: 300px;
+}
+
 textarea:focus, input:focus {
     color: white;
 }

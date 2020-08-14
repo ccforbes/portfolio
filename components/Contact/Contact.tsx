@@ -34,7 +34,6 @@ export const Contact: React.FC = () => {
             message: ""
         })
     }
-    console.log(state)
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void | undefined => {
         const { name, value } = event.target
@@ -48,11 +47,24 @@ export const Contact: React.FC = () => {
         <h4><strong>Contact Me</strong></h4>
         <p>Please feel free to send me an email about any opportunities!</p>
         <form onSubmit={sendEmail}>
-            <input type="text" value={state.name} placeholder='NAME' name="name" onChange={handleChange} />
-            <input type="email" value={state.email} placeholder='EMAIL' name="email" onChange={handleChange} />
-            <textarea value={state.message} placeholder='YOUR MESSAGE' name="message" onChange={handleChange}></textarea>
+            <input 
+                type="text" 
+                value={state.name} 
+                placeholder='NAME' 
+                name="name" 
+                onChange={handleChange} />
+            <input 
+                type="email" 
+                value={state.email} 
+                placeholder='EMAIL' 
+                name="email" 
+                onChange={handleChange} />
+            <textarea
+                value={state.message} 
+                placeholder='YOUR MESSAGE' 
+                name="message" 
+                onChange={handleChange} />
             <button className="button" type="submit">Send</button>
         </form>
-        
     </div>
 }

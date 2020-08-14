@@ -27,17 +27,17 @@ export const SingleJob: React.FC<SingleJobProps> = ({ job }) => {
         <MediaQuery minDeviceWidth={691}>
             <CustomCard horizontal>
                 <CustomCardThumbnail reveal imgSrc={job.image} styles={webImg} />
-                    <CustomCardContent
-                        reveal
-                        title={job.title}
-                        subtitle={job.employer}
-                        startDate={job.startDate}
-                        endDate={job.endDate}
-                        shortDesc={job.shortDesc} />
-                    <CustomCardReveal
-                        title={job.title}
-                        description={job.description} />
-                </CustomCard>
+                <CustomCardContent
+                    reveal
+                    title={job.title}
+                    subtitle={job.employer}
+                    startDate={job.startDate}
+                    endDate={job.endDate}
+                    shortDesc={job.shortDesc} />
+                <CustomCardReveal
+                    title={job.title}
+                    description={job.description} />
+            </CustomCard>
         </MediaQuery>
         <MediaQuery maxDeviceWidth={690}>
             <CustomCard>

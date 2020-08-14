@@ -15,8 +15,8 @@ export const CustomCardReveal: React.FC<CustomCardRevealProps> = ({ title, descr
             <i className='material-icons right'>close</i>
         </span>
         <div className='section'>
-            {description.map(paragraph => {
-                return <p>{paragraph}</p>
+            {description.map((paragraph: string, index: number) => {
+                return <p key={index}>{paragraph}</p>
             })}
         </div>
     </div>

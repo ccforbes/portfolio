@@ -10,7 +10,7 @@ import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor'
 
 const IndexPage = () => {
     configureAnchors({offset: -64})
-    return <Layout title='Home'>
+    return <Layout>
         <Intro />
         <ScrollableAnchor id="about">
             <div>

@@ -10,8 +10,8 @@ const darkModeLink: React.CSSProperties = {
 
 export const CustomCardActions: React.FC<CustomCardActionsProps> = ({ links }) => {
     return <div className='card-action'>
-        {links.map(link => {
-            return <a style={darkModeLink} href={link.link}>{link.name}</a>
+        {links.map((link: Link, index: number) => {
+            return <a key={index} style={darkModeLink} href={link.link}>{link.name}</a>
         })}
     </div>
 }
