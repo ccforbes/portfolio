@@ -1,3 +1,13 @@
 .footer {
     background-color: #292929;
 }
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    color: #cccccc;
+    padding: 5px;
+}

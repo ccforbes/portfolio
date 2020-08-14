@@ -16,6 +16,7 @@
     "@material-ui/icons": "^4.9.1",
     "@types/react-responsive": "^8.0.2",
     "@types/react-scrollable-anchor": "^0.6.0",
+    "emailjs-com": "^2.6.3",
     "fontsource-open-sans": "^3.0.3",
     "materialize-css": "^1.0.0-rc.2",
     "materialize-social": "^1.0.3",

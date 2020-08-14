@@ -7,7 +7,7 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 360px) {
     h1 {
         font-size: 30px;
     }
@@ -31,4 +31,16 @@ body {
 
 main {
     flex: 1 0 auto;
+}
+
+p {
+    font-size: larger;
+}
+
+textarea:focus, input:focus {
+    color: white;
+}
+
+input, select, textarea{
+    color: white;
 }
