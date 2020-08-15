@@ -5,7 +5,7 @@ const paragraphs: string[] = [
     "the University of Washington with a Bachelor of Science in Informatics with " +
     "a focus on Software Development.",
     "I am passionate about using my full stack software development skills in " +
-    "creating intutive applications to solve various information problems " +
+    "creating intuitive applications to solve various information problems " +
     "that'll benefit people and society.",
     "Outside of work or school, I love playing tennis and I'm a huge music geek, " +
     "nerding out over a capella arrangements and pop / R&B runs. "
