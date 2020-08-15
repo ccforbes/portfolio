@@ -1,5 +1,4 @@
 import React from 'react'
-//import styles from './*.module.css'
 import { SingleJob } from './Job/SingleJob'
 import { Row, Col } from 'react-materialize'
 
