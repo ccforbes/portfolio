@@ -7,9 +7,11 @@ import { Experience } from '../components/Experience/Experience'
 import { Projects } from '../components/Projects/Projects'
 import { Contact } from '../components/Contact/Contact'
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor'
+import { useMediaQuery } from '@material-ui/core'
 
 const IndexPage = () => {
-    configureAnchors({offset: -64})
+    const matches: boolean = useMediaQuery("(min-width: 992px)")
+    if (matches) configureAnchors({offset: -64})
     return <Layout>
         <Intro />
         <ScrollableAnchor id="about">
