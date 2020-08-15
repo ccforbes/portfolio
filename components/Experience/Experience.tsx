@@ -24,7 +24,7 @@ const JOBS: Job[] = [
                      "for INFO 441: Server-Side Development for Spring 2020. This is a course " +
                      "offered by the Informatics program at the University of " + 
                      "Washington.",
-                    "This course focuses a lot on server-side web development. The version " +
+                    "This course focuses on server-side web development. The version " +
                     "of the course I assisted in utilized AWS EC2 for the cloud service and " +
                     "infrastructure, Docker to containerize programs, Go and Node.js for writing " +
                     "REST API services, MySQL, MongoDB, and Redis for databases, and websockets " +
@@ -33,9 +33,9 @@ const JOBS: Job[] = [
                     "in class and help them apply these skills to their assignments and final project. " +
                     "The TA and I recorded videos for lab sections and wrote up tutorials to help break down " +
                     "difficult topics within the class. I held office hours to answer questions and help "+
-                    "debug assignment, and conducted code reviews while grading programming concepts.",
+                    "debug assignments, and conducted code reviews while grading programming concepts.",
                     "This course is notoriously difficult within our program because it covers a variety of " +
-                    "topics, from Back End Development, DevOps and Infrastructure. However, the course " +
+                    "topics including Back End Development, DevOps, and Infrastructure. However, the course " +
                     "I assisted had a higher performance than past courses offerings. I was able to find flaws " +
                     "that I noticed when I took the course, and helped break down topics that are difficult " +
                     "to understand. The instruction team also removed some assignments that took away from " +
@@ -71,12 +71,11 @@ const JOBS: Job[] = [
                     "the Arranged Parking services when arranging events on UW campus. ", 
                     "The Parking Operations team within UWTS has a system in place where they manually enter " + 
                     "the requests into a spreadsheet which is then translated into visual information in Tableau. " +
-                    "I developed a program that reads this spreadsheet and will send emails to event arragners " + 
-                    "three days after the event occured.",
-                    "There was no feedback system previously in place, so this allowed for 100-200 emails being sent out every month " +
-                    "and around 50-100 feedback surveys filled every month. This helped in improving the quality " +
-                    "of the customer service given by the Arranged Parking team.",
-                    "The second project I engaged in was an ackwolegedement system for UW student employees. I utilized " +
+                    "I developed a program that reads this spreadsheet and will send emails to event arrangers " + 
+                    "three days after the event occurred.",
+                    "With this newly implemented pipeline, our Arranged Parkings team received around 50-100 feedback surveys  " + 
+                    "every month. This helped in improving the quality of the customer service given by the Arranged Parking team.",
+                    "The second project I engaged in was an acknowledgement system for UW student employees. I utilized " +
                     "Humanity's API to grab scheduled shifts and created a dashboard that helps managers and program " +
                     "coordinators keep track of people's acknowledgement to come into a shift. This allowed for better " +
                     "preparation during big UW events."],
@@ -96,6 +95,5 @@ export const Experience: React.FC = () => {
                 </Col>
             })}
         </Row>
-        
     </div>
 }
