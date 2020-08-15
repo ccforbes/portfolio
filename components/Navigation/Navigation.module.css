@@ -3,8 +3,9 @@
     color: white;
 }
 
-.sidenav {
-    background-color: #5f5f73;
+.mobilenav {
+    height: 65px;
+    background-color: #292929;
 }
 
 .navItem {

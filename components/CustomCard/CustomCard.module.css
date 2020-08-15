@@ -2,4 +2,14 @@
     .title {
         font-size: smaller;
     }
+
+    .content {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .content {
+        text-align: center;
+    }
 }
