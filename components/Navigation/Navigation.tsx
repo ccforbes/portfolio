@@ -12,7 +12,7 @@ const navLinks: Link[] = [
 ]
 
 export const Navigation = () => {
-    const matches = useMediaQuery("(max-width:600px)")
+    const matches = useMediaQuery("(max-width:990px)")
 
     if (matches) {
         return <div className={styles.nav}>
@@ -27,9 +27,13 @@ export const Navigation = () => {
                 options={{
                     draggable: true
                 }}
-                trigger={<div className={styles.mobilenav  + " center"}>
-                    <img className={styles.nav} src='/webpage-logo.svg' height='65px' />
-                </div>}
+                trigger={
+                    <div className={styles.mobilenav}>
+                        <div className={styles.menu}><Icon small>menu</Icon></div>
+                        <div className={styles.logo}><img src='/webpage-logo.svg' height='65px' /></div>
+                        <div className={styles.right}></div>
+                    </div>
+                }
             >
                 {navLinks.map((link: Link, index: number) => {
                     return <SideNavItem key={index} href={link.link}>

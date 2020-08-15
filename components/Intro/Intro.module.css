@@ -3,9 +3,6 @@
         height: default;
     }
 }
-.intro {
-    height: 1000px;
-}
 
 
 .title {
@@ -23,7 +20,7 @@
 }
 
 .link {
-    color: #cccccc;
+    color: white;
     display: flex;
     align-items: center;
     padding: 5px;

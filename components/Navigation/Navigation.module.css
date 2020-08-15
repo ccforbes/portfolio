@@ -6,6 +6,18 @@
 .mobilenav {
     height: 65px;
     background-color: #292929;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    justify-self: left;
+    padding-left: 5px;
+}
+
+.logo {
+    justify-self: center;
 }
 
 .navItem {

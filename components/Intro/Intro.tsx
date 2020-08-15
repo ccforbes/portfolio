@@ -1,10 +1,10 @@
 import React from 'react'
 import styles from './Intro.module.css'
 import { Slider, Slide, Caption } from 'react-materialize'
-import MediaQuery from 'react-responsive'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, IconDefinition } from '@fortawesome/free-brands-svg-icons'
 import { faFileAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { useMediaQuery } from '@material-ui/core'
 
 type FALink = {
     link: string,
@@ -31,8 +31,22 @@ const links: FALink[] = [
 ]
 
 export const Intro: React.FC = () => {
-    const options = {
+    const tabletSize: boolean = useMediaQuery("(min-width: 1366px)")
+    const laptopSize: boolean = useMediaQuery("(min-width: 1920px)")
+    let height: number | undefined
+    let iconSize: "2x" | "3x" | undefined = "2x"
+
+    if (tabletSize) {
+        height = 600
+    } 
+    if (laptopSize) {
+        height = 800
+        iconSize = "3x"
+    }
+
+    let options = {
         duration: 500,
+        height: height,
         indicators: false,
         interval: 6000
     }
@@ -40,41 +54,19 @@ export const Intro: React.FC = () => {
     return <Slider className={styles.intro} options={options}>
         <Slide image={<img className={styles.img} alt='' src='/pic-of-me.jpg' />}>
             <Caption placement='right'>
-                <MediaQuery maxDeviceWidth={900}>
-                    {matches => {
-                        return matches 
-                        ? <div>
-                            <h1 className={styles.title}>
-                                <strong>Christofer Forbes</strong>
-                            </h1>
-                            <h3 className={styles.title}>
-                                Software Engineer
-                            </h3>
-                            <div className={styles.links + " right"}>
-                                {links.map((link: FALink, index: number) => {
-                                    return <a className={styles.link} key={index} href={link.link}>
-                                        <FontAwesomeIcon className={styles.icon} icon={link.icon} size="2x" />
-                                    </a>
-                                })}
-                            </div>
-                        </div> 
-                        : <div>
-                            <h1 className={styles.title}>
-                                <strong>Christofer Forbes</strong>
-                            </h1>
-                            <h3 className={styles.title}>
-                                Software Engineer
-                            </h3>
-                            <div className={styles.links + " right"}>
-                                {links.map((link: FALink, index: number) => {
-                                    return <a className={styles.link} key={index} href={link.link}>
-                                        <FontAwesomeIcon className={styles.icon} icon={link.icon} size="2x" />
-                                    </a>
-                                })}
-                            </div>
-                        </div>
-                    }}
-                </MediaQuery>
+                <h1 className={styles.title}>
+                    <strong>Christofer Forbes</strong>
+                </h1>
+                <h3 className={styles.title}>
+                    Software Engineer
+                </h3>
+                <div className={styles.links + " right"}>
+                    {links.map((link: FALink, index: number) => {
+                        return <a className={styles.link} key={index} href={link.link}>
+                            <FontAwesomeIcon className={styles.icon} icon={link.icon} size={iconSize} />
+                        </a>
+                    })}
+                </div>
             </Caption>
         </Slide>
     </Slider>
