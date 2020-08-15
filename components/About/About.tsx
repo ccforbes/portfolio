@@ -7,8 +7,8 @@ const paragraphs: string[] = [
     "I am passionate about using my full stack software development skills in " +
     "creating intutive applications to solve various information problems " +
     "that'll benefit people and society.",
-    "Outside of work or school, I love play tennis and I'm a huge music geek, " +
-    "nerding out over a capella arrangments and pop / R&B runs. "
+    "Outside of work or school, I love playing tennis and I'm a huge music geek, " +
+    "nerding out over a capella arrangements and pop / R&B runs. "
 ]
 
 export const About = () => {
