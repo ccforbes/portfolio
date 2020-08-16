@@ -1,45 +1,73 @@
 import { Row, Col, Icon } from "react-materialize"
 import styles from "./Skills.module.css"
 
-const languages: string[] = [
-    'C#', "CSS", 'HTML', 'Go', 'Java', "JavaScript", 'TypeScript', 'SQL'
+const description: string[] = [
+    "Here are the technologies that I've worked with!",
+    "The "
 ]
 
-const frameworks: string[] = [
-    'ASP.NET Core', 'Express', 'Next.js', 'Node.js', 'React'
+const proficientLanguages: string[] = [
+    "CSS", 'HTML', 'Go', 'Java', "JavaScript", 'TypeScript', 'SQL'
 ]
 
-const tools: string[] = [
-    'AWS', 'Azure', 'Docker', 'GCP', 'Git', 'MongoDB'
+const proficientFrameworks: string[] = [
+    'Express', 'Next.js', 'Node.js', 'React'
+]
+
+const proficientTools: string[] = [
+    'AWS', 'Docker', 'GCP', 'Git', 'MongoDB', 'Postman'
+]
+
+const familiarLanguages: string[] = [
+    'Bash Script', 'C', 'C++', 'C#', 'Kotlin', 'Python'
+]
+
+const familiarFrameworks: string[] = [
+    'ASP.NET Core', 'Redux'
+]
+
+const familiarTools: string[] = [
+    'Azure', 'Redis', 'RabbitMQ', 'Wensockets'
 ]
 
 type Skills = {
     title: string,
     icon: string,
-    list: string[]
+    proficient: string[],
+    familiar: string[]
 }
 
 const skills: Skills[] = [
     {
         title: "Languages",
         icon: "code",
-        list: languages
+        proficient: proficientLanguages,
+        familiar: familiarLanguages
     },
     {
         title: "Frameworks",
         icon: "settings",
-        list: frameworks
+        proficient: proficientFrameworks,
+        familiar: familiarFrameworks
     },
     {
         title: "Tools",
         icon: "build",
-        list: tools
+        proficient: proficientTools,
+        familiar: familiarTools
     },
 ]
 
 export const Skills = () => {
     return <div className='container section'>
         <h4 className='center-align'><strong>Skills</strong></h4>
+        <p className='center-align'>
+            Here are the technologies that I've worked with!<br />
+            <strong>Technologies in bold means that I'm proficient in using them.</strong><br />
+            <em>
+                Technologies in italic means that I'm familiar in using them. 
+            </em>
+        </p>
             <div className='section'>
                 <Row className='center-align'>
                     {skills.map((skillset: Skills, index: number) => {
@@ -49,7 +77,8 @@ export const Skills = () => {
                                     <Icon medium className={styles.icon}>{skillset.icon}</Icon>
                                     <h5>{skillset.title}</h5>
                                 </div>
-                                <p>{skillset.list.join(", ")}</p>
+                                <p><strong>{skillset.proficient.join(", ")}</strong></p>
+                                <p><em>{skillset.familiar.join(", ")}</em></p>
                             </div>
                         </Col>
                     })}
