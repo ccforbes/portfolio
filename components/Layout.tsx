@@ -30,7 +30,7 @@ const keywords: string[] = [
 const description: string = "My name is Christofer Forbes and I'm a software engineer from Seattle, WA!"
 
 export const Layout: React.FC<LayoutProps> = ({ children }) => {
-    return <div className="body">
+    return <>
         <Head>
             <meta charSet="utf-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
@@ -55,5 +55,5 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             {children}
         </main>
         <Footer />
-    </div>
+    </>
 }
