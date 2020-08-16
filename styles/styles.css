@@ -29,7 +29,7 @@
     }
 }
 
-h1 strong, h4 strong, p strong {
+h1 strong, h4 strong, p strong, span strong {
     font-weight: bold;
 }
 
