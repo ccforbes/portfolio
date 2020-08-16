@@ -60,8 +60,11 @@ export const Skills = () => {
             Here are the technologies that I've worked with!<br />
             <strong>Technologies in bold means that I'm proficient in using them.</strong><br />
             <em>
-                Technologies in italic means that I'm familiar in using them. 
-            </em>
+                Technologies in italic means that I'm familiar in using them.
+            </em><br />
+            I'm drivien by curiosity, so whether I'm proficient or only familiar, I always
+            strive to become better and will take the initiative to learn, whether professionally,
+            or on my own.
         </p>
             <div className='section'>
                 <Row className='center-align'>
