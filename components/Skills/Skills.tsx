@@ -1,11 +1,6 @@
 import { Row, Col, Icon } from "react-materialize"
 import styles from "./Skills.module.css"
 
-const description: string[] = [
-    "Here are the technologies that I've worked with!",
-    "The "
-]
-
 const proficientLanguages: string[] = [
     "CSS", 'HTML', 'Go', 'Java', "JavaScript", 'TypeScript', 'SQL'
 ]
