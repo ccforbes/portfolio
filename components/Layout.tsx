@@ -28,7 +28,9 @@ const keywords: string[] = [
     "Christofer Forbes Web Development"
 ]
 
-const description: string = "My name is Christofer Forbes and I'm a software engineer from Seattle, WA!"
+const description: string = 
+    "My name is Christofer Forbes and I'm a software engineer from Seattle, WA! " +
+    "Welcome to my personal developer portfolio!"
 
 const img: CSSProperties = {
     display: 'none'
