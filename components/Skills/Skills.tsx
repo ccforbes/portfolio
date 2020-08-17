@@ -22,7 +22,7 @@ const familiarFrameworks: string[] = [
 ]
 
 const familiarTools: string[] = [
-    'Azure', 'Redis', 'RabbitMQ', 'Wensockets'
+    'Azure', 'Redis', 'RabbitMQ', 'Websockets'
 ]
 
 type Skills = {
@@ -57,15 +57,11 @@ export const Skills = () => {
     return <div className='container section'>
         <h4 className='center-align'><strong>Skills</strong></h4>
         <p className='center-align'>
-            Here are the technologies that I've worked with!<br />
-            <strong>Technologies in bold means that I'm proficient in using them.</strong><br />
-            <em>
-                Technologies in italic means that I'm familiar in using them.
-            </em><br />
-            I'm drivien by curiosity, so whether I'm proficient or only familiar, I always
-            strive to become better and will take the initiative to learn, whether professionally,
-            or on my own.
+            I'm driven by curiosity and my skillset is always changing. So whether I'm 
+            <strong> proficient</strong> in a technology or just <em>familiar</em>, I'm
+            passionate and have a deep desire to learn, both professionally or on my own time.
         </p>
+        <p className='center-align'>Here are the technologies that I've worked with!</p>
             <div className='section'>
                 <Row className='center-align'>
                     {skills.map((skillset: Skills, index: number) => {

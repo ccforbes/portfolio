@@ -15,24 +15,12 @@ const webImg: CSSProperties = {
 
 export const SingleJob: React.FC<SingleJobProps> = ({ job }) => {
     const matches = useMediaQuery("(max-width:690px)")
-
-    if (matches) {
-        return <CustomCard>
-            <CustomCardThumbnail reveal imgSrc={job.image} />
-            <CustomCardContent
-                reveal
-                title={job.title}
-                subtitle={job.employer}
-                startDate={job.startDate}
-                endDate={job.endDate}
-                shortDesc={job.shortDesc} />
-            <CustomCardReveal
-                title={job.title}
-                description={job.description} />
-        </CustomCard>
-    }
-    return <CustomCard horizontal>
+    const thumbnail: JSX.Element = matches ? 
+        <CustomCardThumbnail reveal imgSrc={job.image} /> :
         <CustomCardThumbnail reveal imgSrc={job.image} styles={webImg} />
+    const horizontal: boolean = !matches
+    return <CustomCard horizontal={horizontal}>
+        {thumbnail}
         <CustomCardContent
             reveal
             title={job.title}
