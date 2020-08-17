@@ -48,7 +48,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             <meta property="og:site_name" content="Christofer Forbes" />
             <meta property="og:description" content={description} />
             <meta property="og:type" content="website" />
-            <meta property="og:image" content="/pic-of-me.jpg" />
+            <meta property="og:image" content="/thumbnail.jpg" />
 
             <title>Christofer Forbes</title>
             <link rel="shortcut icon" href='/favicon-logo.svg' />
