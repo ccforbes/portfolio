@@ -2,7 +2,6 @@ import React from 'react'
 import Head from 'next/head'
 import { Navigation } from './Navigation/Navigation'
 import { Footer } from './Footer/Footer'
-import { CSSProperties } from '@material-ui/core/styles/withStyles'
 
 type LayoutProps = {
     children: React.ReactNode
@@ -32,10 +31,6 @@ const description: string =
     "My name is Christofer Forbes and I'm a software engineer from Seattle, WA! " +
     "Welcome to my personal developer portfolio!"
 
-const img: CSSProperties = {
-    display: 'none'
-}
-
 export const Layout: React.FC<LayoutProps> = ({ children }) => {
     return <>
         <Head>
@@ -60,8 +55,6 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
         </Head>
         <Navigation />
         <main>
-            {/*The image is just here for the default image when sharing the website link */}
-            <img src='/pic-of-me.jpg' style={img} /> 
             {children}
         </main>
         <Footer />

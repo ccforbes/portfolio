@@ -48,7 +48,7 @@ const JOBS: Job[] = [
         image: "/adaptilab.png",
         title: "Software Engineer Co-op",
         employer: "AdaptiLab",
-        shortDesc: "Worked on AdaptiLab's project \"HireAssist.ML\" for my co-op and capstone.",
+        shortDesc: "Worked on AdaptiLab's \"HireAssist.ML\" for my co-op and capstone.",
         description: ["I got to work with AdaptiLab as a co-op for Winter and Spring of 2020. This "+
                     "was my Capstone project for the Informatics program.",
                     "Our aim with HireAssist.ML was to streamline and automate the job application " +
