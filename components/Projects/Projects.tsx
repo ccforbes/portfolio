@@ -4,7 +4,6 @@ import { Row, Col } from 'react-materialize'
 import { Link } from '../types'
 
 export type Project = {
-    id: number,
     name: string,
     description: string[],
     startDate: string,
@@ -16,7 +15,6 @@ export type Project = {
 
 const PROJECTS: Project[] = [
     {
-        id: 4,
         name: "MyFoodDiary",
         description: ["I'm currently working with \"Computing ReApplied\", a small start-up based in Seattle.",
                     "Our project, \"MyFoodDiary\", is a mobile app/web portal pair that allows " +
@@ -40,7 +38,6 @@ const PROJECTS: Project[] = [
         image: "/myfooddiary.png"
     },
     {
-        id: 3,
         name: "HireAssist.ML",
         description: ["This was a project for my co-op at AdaptiLab. This also served as my 2020 Capstone for " +
                     "the Informatics program.",
@@ -70,7 +67,6 @@ const PROJECTS: Project[] = [
         image: "/hireassist-ml.png"
     },
     {
-        id: 2,
         name: "Chat App",
         description: ["I wrote a Slack clone chat application to help me understand end-to-end infrastructure of an " +
                     "interactive web application.",
@@ -99,7 +95,6 @@ const PROJECTS: Project[] = [
         image: "/placeholder.jpg"
     },
     {
-        id: 1,
         name: "MTNEAR",
         description: ["This Android application uses REI's outdoor API to list and show nearby hiking trails and climbing routes.",
                     "We allow users to filter out the types of trails and activities to better suit their capabilities. The " +
@@ -119,7 +114,50 @@ const PROJECTS: Project[] = [
             new Link("Code", "https://github.com/ccforbes/mtnear-android-app")
         ],
         image: "/mtnear.jpg"
-    }
+    },
+    {
+        name: "SendNews",
+        description: ["I worked on a team of 5 to create a simple news feed application with a quiz feature that allow people to make/take quizzes. " + 
+                    "The goal of the application is to game-ify reading the news and allow people to gain points after taking a quiz. " + 
+                    "A leaderboard is present that displays users with the most points.",
+                    "I mainly worked on the front end of the website, by creating the card components for each news article. We used React for " + 
+                    "our front end framework. I also was responsible for automating API calls to receive the latest news articles. " + 
+                    "We used the News API to receive our data. I then used Google Apps Script to trigger a script that retrieves new articles every 30 minutes. " + 
+                    "This script then connects to our Firebase database which then populates our news feed. The application is hosted on Heroku.",
+                    "The project was for a Cooperative Software Development class within my undergraduate program."],
+        startDate: "October 2019",
+        endDate: "December 2019",
+        technologies: [
+            "React",
+            "Heroku",
+            "Firebase",
+            "Google Apps Script",
+        ],
+        links: [
+            new Link("Website", "http://app-sendnews.herokuapp.com/")
+        ],
+        image: "/send-news.png"
+    },
+    {
+        name: "Music Festival Database",
+        description: ["I worked on a team of four to create a relational database to streamline and optimize the musician lineup decision making process.",
+                    "The goal of this database is to provide easily accessible, pertinent information that would allow organizers to construct " + 
+                    "organizers to construct a financially viable andd entertaining event for their consumer base. This database can keep track " + 
+                    "of each step of the decision making process and keep track of certain data.",
+                    "I wrote SQL scripts to create the Contact, Cost, Agent, and Talent entities. I also wrote stored procedures " + 
+                    "and complex queries related to these tables. Our team went through several iterations of normalizing and optimizing " + 
+                    "the database. We also diagramed the scheme of our database using Crow's Foot notation to figure out relations between entities.",
+                    "This project was for my Database Design and Modeling course in my undergraduate program."],
+        startDate: "September 2019",
+        endDate: "December 2019",
+        technologies: [
+            "SQL Server",
+        ],
+        links: [
+            new Link("Code", "https://github.com/ccforbes/music-festival-database")
+        ],
+        image: "/music-festival.png"
+    },
 ]
 
 export const Projects = () => {
@@ -127,8 +165,8 @@ export const Projects = () => {
         <h4 className='center-align'><strong>Projects</strong></h4>
         <p className='center-align'>Click on a project image to learn more!</p>
         <Row>
-            {PROJECTS.map(project => {
-                return <Col xl={6} l={6} m={12} key={project.id}>
+            {PROJECTS.map((project: Project, index: number) => {
+                return <Col xl={6} l={6} m={12} key={index}>
                     <SingleProject project={project} />
                 </Col>
             })}

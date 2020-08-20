@@ -7,7 +7,7 @@ type CustomCardBodyProps = {
 
 export const CustomCardBody: React.FC<CustomCardBodyProps> = ({ startDate, endDate, subtitle, shortDesc }) => {
     return <div>
-        <div className='section'>
+        <div>
             {subtitle ? <p>{subtitle}</p> : <></>}
             <p><em>{startDate} - {endDate ? endDate : "Present"}</em></p>
         </div>
