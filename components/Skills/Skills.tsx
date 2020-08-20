@@ -56,11 +56,13 @@ const skills: Skills[] = [
 export const Skills = () => {
     return <div className='container section'>
         <h4 className='center-align'><strong>Skills</strong></h4>
-        <p className='center-align'>
-            I'm driven by curiosity and my skillset is always changing. So whether I'm 
-            <strong> proficient</strong> in a technology or just <em>familiar</em>, I'm
-            passionate and have a deep desire to learn, both professionally or on my own time.
-        </p>
+        <div className={styles.skills}>
+            <p>
+                I'm driven by curiosity and my skillset is always changing. So whether I'm 
+                <strong> proficient</strong> in a technology or just <em>familiar</em>, I'm
+                passionate and have a deep desire to learn, both professionally or on my own time.
+            </p>
+        </div>
         <p className='center-align'>Here are the technologies that I've worked with!</p>
             <div className='section'>
                 <Row className='center-align'>
