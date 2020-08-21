@@ -47,9 +47,12 @@ const PROJECTS: Project[] = [
                     "HireAssist.ML streamlines the job application by providing job recommendations based on " +
                     "one's resume, and will also fill out repetitive information in online applications. We created " +
                     "a Chrome Extension that provides all these services and will always be accessible within the " +
-                    "browser.",
-                    "By providing these services, job searchers can fill out many job applications quickly, allowing " +
-                    "them to more quickly land their next opportunity."],
+                    "browser. By providing these services, job searchers can fill out many job applications quickly, allowing " +
+                    "them to more quickly land their next opportunity.",
+                    "I was involved in all aspects of the software development lifecycle: conducting user research, " + 
+                    "designing wireframes and prototypes, and development. I was ultimately responsible for establishing a " +
+                    "serverless cloud architecture using Google Cloud Run, writing our back end application using Node.js, and deploying " +
+                    "our application to the cloud with Docker." ],
         startDate: "January 2020",
         endDate: "May 2020",
         technologies: [

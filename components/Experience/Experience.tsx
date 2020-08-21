@@ -3,7 +3,6 @@ import { SingleJob } from './Job/SingleJob'
 import { Row, Col } from 'react-materialize'
 
 export type Job = {
-    id: number
     image: string,
     title: string,
     employer: string,
@@ -15,7 +14,6 @@ export type Job = {
 
 const JOBS: Job[] = [
     {
-        id: 3,
         image: "/ischool.png",
         title: "Teaching Assistant: Server-Side Development",
         employer: "University of Washington Information School",
@@ -44,7 +42,6 @@ const JOBS: Job[] = [
         endDate: "June 2020",
     },
     {
-        id: 2,
         image: "/adaptilab.png",
         title: "Software Engineer Co-op",
         employer: "AdaptiLab",
@@ -62,7 +59,6 @@ const JOBS: Job[] = [
         endDate: "May 2020",
     },
     {
-        id: 1,
         image: "/transportation.jfif",
         title: "Student Assistant: Software Developer",
         employer: "University of Washington Transporation Services",
@@ -89,9 +85,9 @@ export const Experience: React.FC = () => {
         <h4 className='center-align'><strong>Experience</strong></h4>
         <p className='center-align'>Click on an image to learn more!</p>
         <Row>
-            {JOBS.map(job => {
-                return <Col s={12} key={job.id}>
-                    <SingleJob job={job} key={job.id}/>
+            {JOBS.map((job: Job, index: number) => {
+                return <Col s={12} key={index}>
+                    <SingleJob job={job} />
                 </Col>
             })}
         </Row>
