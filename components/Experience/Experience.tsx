@@ -26,7 +26,7 @@ const JOBS: Job[] = [
                      "Washington.",
                     "This course focuses on server-side web development. The version " +
                     "of the course I assisted in utilized AWS EC2 for the cloud service and " +
-                    "infrastructure, Docker to containerize programs, Go and Node.js for writing " +
+                    "infrastructure, Docker to containerize programs, Go, Node.js, and Flask for writing " +
                     "REST API services, MySQL, MongoDB, and Redis for databases, and websockets " +
                     "for asynchronous messaging.",
                     "My main function was to help students in understanding the concepts taught " +
