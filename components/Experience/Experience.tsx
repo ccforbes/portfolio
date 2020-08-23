@@ -14,6 +14,26 @@ export type Job = {
 
 const JOBS: Job[] = [
     {
+        image: "/transportation.jfif",
+        title: "Student Assistant: Software Developer",
+        employer: "University of Washington Transporation Services",
+        shortDesc: "Developed various automated systems for internal workflows.",
+        description: ["The first project I worked was to send automated survey emails to those that utilize " +
+                    "the Arranged Parking services when arranging events on UW campus. ", 
+                    "The Parking Operations team within UWTS has a system in place where they manually enter " + 
+                    "the requests into a spreadsheet which is then translated into visual information in Tableau. " +
+                    "I developed a program that reads this spreadsheet and will send emails to event arrangers " + 
+                    "three days after the event occurred.",
+                    "With this newly implemented pipeline, our Arranged Parkings team received around 50-100 feedback surveys  " + 
+                    "every month. This helped in improving the quality of the customer service given by the Arranged Parking team.",
+                    "The second project I engaged in was an acknowledgement system for UW student employees. I utilized " +
+                    "Humanity's API to grab scheduled shifts and created a dashboard that helps managers and program " +
+                    "coordinators keep track of people's acknowledgement to come into a shift. This allowed for better " +
+                    "preparation during big UW events."],
+        startDate: "October 2018",
+        endDate: "July 2020",
+    },
+    {
         image: "/ischool.png",
         title: "Teaching Assistant: Server-Side Development",
         employer: "University of Washington Information School",
@@ -58,26 +78,6 @@ const JOBS: Job[] = [
         startDate: "January 2020",
         endDate: "May 2020",
     },
-    {
-        image: "/transportation.jfif",
-        title: "Student Assistant: Software Developer",
-        employer: "University of Washington Transporation Services",
-        shortDesc: "Developed various automated systems for internal workflows.",
-        description: ["The first project I worked was to send automated survey emails to those that utilize " +
-                    "the Arranged Parking services when arranging events on UW campus. ", 
-                    "The Parking Operations team within UWTS has a system in place where they manually enter " + 
-                    "the requests into a spreadsheet which is then translated into visual information in Tableau. " +
-                    "I developed a program that reads this spreadsheet and will send emails to event arrangers " + 
-                    "three days after the event occurred.",
-                    "With this newly implemented pipeline, our Arranged Parkings team received around 50-100 feedback surveys  " + 
-                    "every month. This helped in improving the quality of the customer service given by the Arranged Parking team.",
-                    "The second project I engaged in was an acknowledgement system for UW student employees. I utilized " +
-                    "Humanity's API to grab scheduled shifts and created a dashboard that helps managers and program " +
-                    "coordinators keep track of people's acknowledgement to come into a shift. This allowed for better " +
-                    "preparation during big UW events."],
-        startDate: "October 2018",
-        endDate: "March 2020",
-    }
 ]
 
 export const Experience: React.FC = () => {
