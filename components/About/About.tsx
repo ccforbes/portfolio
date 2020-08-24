@@ -3,8 +3,10 @@ import styles from './About.module.css'
 const paragraphs: JSX.Element[] = [
     <p key={0}>
         I'm a software engineer based in Seattle, WA. I recently graduated from 
-        the <a href="https://www.washington.edu/">University of Washington</a> with 
-        a Bachelor of Science in <a href="https://ischool.uw.edu/programs/informatics/what-is-informatics">Informatics</a> with a focus on Software Development.
+        the <a href="https://www.washington.edu/" target="_blank">University of Washington</a> with 
+        a Bachelor of Science in <a href="https://ischool.uw.edu/programs/informatics/what-is-informatics" target="_blank">
+            Informatics
+        </a> with a focus on Software Development.
     </p>,
     <p key={1}>
         I am passionate about using my full stack software development skills in 

@@ -62,7 +62,7 @@ export const Intro: React.FC = () => {
                 </h3>
                 <div className={styles.links + " right"}>
                     {links.map((link: FALink, index: number) => {
-                        return <a className={styles.link} key={index} href={link.link}>
+                        return <a className={styles.link} key={index} href={link.link} target="_blank">
                             <FontAwesomeIcon className={styles.icon} icon={link.icon} size={iconSize} />
                         </a>
                     })}
