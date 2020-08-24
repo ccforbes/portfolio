@@ -50,6 +50,10 @@ main {
     flex: 1 0 auto;
 }
 
+p {
+    font-size: 17px;
+}
+
 #SideNav-10 li a {
     color: white;
 }

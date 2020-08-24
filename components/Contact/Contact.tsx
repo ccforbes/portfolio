@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import * as emailjs from 'emailjs-com'
+import styles from './Contact.module.css'
 
 
 export const Contact: React.FC = () => {
@@ -64,7 +65,10 @@ export const Contact: React.FC = () => {
                 placeholder='YOUR MESSAGE' 
                 name="message" 
                 onChange={handleChange} />
-            <button className="button" type="submit">Send</button>
+            <button className={"btn waves-effect waves-light " + styles.button} type="submit" name="action">
+                Submit
+                <i className="material-icons right">send</i>
+            </button>
         </form>
     </div>
 }

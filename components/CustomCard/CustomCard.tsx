@@ -9,7 +9,7 @@ const darkMode: React.CSSProperties = {
 }
 
 export const CustomCard: React.FC<CustomCardProps> = ({children, horizontal, size}) => {
-    const classes: string = 'card hoverable sticky-action' + (size ? ' ' + size : '')
+    const classes: string = 'card hoverable sticky-action z-depth-0' + (size ? ' ' + size : '')
                             + (horizontal ? ' horizontal' : '')
 
     return <div className={classes} style={darkMode}>
