@@ -13,6 +13,16 @@ export const Contact: React.FC = () => {
     const sendEmail = (event: React.FormEvent) => {
         event.preventDefault()
         const { name, email, message } = state;
+        if (name === "") {
+
+        }
+        if (email === "") {
+
+        }
+        if (message === "") {
+
+        }
+
         const templateParms = {
             from_email: email,
             reply_to: email,

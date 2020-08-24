@@ -15,7 +15,7 @@ export type Job = {
 const JOBS: Job[] = [
     {
         image: "/transportation.jfif",
-        title: "Student Assistant: Software Developer",
+        title: "Student Developer",
         employer: "University of Washington Transporation Services",
         shortDesc: "Developed various automated systems for internal workflows.",
         description: ["The first project I worked was to send automated survey emails to those that utilize " +
