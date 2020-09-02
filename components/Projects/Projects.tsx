@@ -15,9 +15,9 @@ export type Project = {
 
 const PROJECTS: Project[] = [
     {
-        name: "MyFoodDiary",
+        name: "MyMedDiary",
         description: ["I'm currently working with \"Computing ReApplied\", a small start-up based in Seattle.",
-                    "Our project, \"MyFoodDiary\", is a mobile app/web portal pair that allows " +
+                    "Our project, \"MyMedDiary\", is a mobile app/web portal pair that allows " +
                     "patients to log their food intake on their phones and illness symptoms they may have. " +
                     "The information will then be processed and visualized for them to keep track of their " +
                     "nutrient intake. Doctors can see their patients' daily intake and make data driven diagnoses " +
@@ -33,6 +33,7 @@ const PROJECTS: Project[] = [
             "Xamarin",
         ],
         links: [
+            new Link("MyMedDiary Portal", "https://portal.computingreapplied.com/"),
             new Link("C-RA Website", "https://computingreapplied.com/")
         ],
         image: "/myfooddiary.png"
@@ -174,6 +175,5 @@ export const Projects = () => {
                 </Col>
             })}
         </Row>
-        
     </div>
 }
