@@ -2,7 +2,7 @@ import { Row, Col, Icon } from "react-materialize"
 import styles from "./Skills.module.css"
 
 const proficientLanguages: string[] = [
-    "CSS", 'HTML', 'Go', 'Java', "JavaScript", 'TypeScript', 'SQL'
+    "CSS", 'HTML', 'Go', 'Java', "JavaScript", 'Python', 'SQL', 'TypeScript'
 ]
 
 const proficientFrameworks: string[] = [
@@ -14,11 +14,11 @@ const proficientTools: string[] = [
 ]
 
 const familiarLanguages: string[] = [
-    'Bash Script', 'C', 'C++', 'C#', 'Kotlin', 'Python'
+    'Bash Script', 'C', 'C++', 'C#', 'Kotlin', 'R'
 ]
 
 const familiarFrameworks: string[] = [
-    'ASP.NET Core', 'Redux'
+    'ASP.NET Core', 'Angular', 'Redux'
 ]
 
 const familiarTools: string[] = [
