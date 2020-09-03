@@ -45,7 +45,7 @@ export const Intro: React.FC = () => {
     }
 
     let options = {
-        duration: 500,
+        duration: 1500,
         height: height,
         indicators: false,
         interval: 6000
