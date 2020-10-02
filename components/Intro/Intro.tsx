@@ -21,7 +21,7 @@ const links: FALink[] = [
         icon: faLinkedin
     },
     {
-        link: "https://drive.google.com/file/d/1idaJbba1BLIrusKWwSWwUaIfV-1SgADT/view?usp=sharing",
+        link: "https://drive.google.com/file/d/1ixsSbxZPndp2I3HF7V5l46At7XMEZtWX/view?usp=sharing",
         icon: faFileAlt
     },
     {
