@@ -14,6 +14,18 @@ export type Job = {
 
 const JOBS: Job[] = [
     {
+        image: "/cra-big-logo.jpg",
+        title: "Software Engineer Intern",
+        employer: "Computing ReApplied",
+        shortDesc: "Contributed to development of MyMedDiary.",
+        description: ["I currently am working on the REST APIs for MyMedDiary. These endpoints are responsible for allowing " + 
+            "users to log symptoms and dietary habits. ",
+            "I'm also in the process and the restructuring of the database schema and back-end codebase to be easier to maintain, " + 
+            "helping in front-end migration from React JavaScript to React TypeScript, and implementing a CI/CD pipeline using Azure " +
+            "DevOps."],
+        startDate: "June 2020",
+    },
+    {
         image: "/transportation.jfif",
         title: "Student Developer",
         employer: "University of Washington Transporation Services",
