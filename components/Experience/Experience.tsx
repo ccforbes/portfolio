@@ -14,7 +14,7 @@ export type Job = {
 
 const JOBS: Job[] = [
     {
-        image: "/facebook.jpeg",
+        image: "/facebook.png",
         title: "Software Engineer",
         employer: "Facebook",
         shortDesc: "Facebook's Metric Search Operations Team",
