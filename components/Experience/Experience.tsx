@@ -14,6 +14,15 @@ export type Job = {
 
 const JOBS: Job[] = [
     {
+        image: "/facebook.jpeg",
+        title: "Software Engineer",
+        employer: "Facebook",
+        shortDesc: "Facebook's Metric Search Operations Team",
+        description: ["I develop internal tools to help in the labeling of machine learning data.",
+            "This role is an assignment through TEKsystems."],
+        startDate: "November 2020",
+    },
+    {
         image: "/cra-big-logo.jpg",
         title: "Software Engineer Intern",
         employer: "Computing ReApplied",
@@ -24,6 +33,7 @@ const JOBS: Job[] = [
             "helping in front-end migration from React JavaScript to React TypeScript, and implementing a CI/CD pipeline using Azure " +
             "DevOps."],
         startDate: "June 2020",
+        endDate: "November 2020"
     },
     {
         image: "/transportation.jfif",
